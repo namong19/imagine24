@@ -25,13 +25,13 @@ export interface IImage extends Document {
 // Create a schema name ImageSchema
 const ImageSchema = new Schema({
   title: { type: String, require: true },
-  tranformationType: { type: String, require: true },
+  transformationType: { type: String, require: true },
   publicId: { type: String, require: true },
-  secureUrl: { type: URL, require: true },
+  secureURL: { type: String, require: true },
   width: { type: Number },
   height: { type: Number },
   config: { type: Object },
-  transformationUrl: { type: URL },
+  transformationUrl: { type: String },
   aspectRatio: { type: String },
   color: { type: String },
   prompt: { type: String },
